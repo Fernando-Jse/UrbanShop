@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="440dp"
+        android:layout_height="1060dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/a11"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logou"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="365dp"
+        android:layout_height="326dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:text="Empresa: Urban Shop"
+            android:textColor="@color/black"
+            android:textSize="12pt" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="50dp"
+            android:text="Descripcion: Somos una empresa de venta de ropa tanto de mujeres y hombres."
+            android:textColor="@color/black"
+            android:textSize="12pt" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="165dp"
+            android:text="Version de la app: 1.0"
+            android:textColor="@color/black"
+            android:textSize="12pt" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="290dp"
+            android:src="@drawable/copy" />
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="288dp"
+            android:text="Todos los derechos reservados"
+            android:textColor="@color/black"
+            android:textSize="10pt" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnaceptar"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="Aceptar"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.877" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
